@@ -5,11 +5,12 @@
             "label": "C/C++: gcc.exe 建置使用中檔案",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
+                "-fexec-charset=BIG5",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
